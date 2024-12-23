@@ -1,7 +1,21 @@
-let num = parseInt(prompt("Please enter the number you would like to FizzBuzz up to: "));
-for(let i = 1; i<=num; i++){
-    if(i%3==0&&i%5==0)console.log("FizzBuzz");
-    else if(i%3==0)console.log("Fizz");
-    else if(i%5==0)console.log("Buzz");
-    else console.log(i);
+const container = document.querySelector("#container");
+
+const content = document.createElement("div");
+content.classList.add("content");
+content.textContent="This is the glorious text-content!";
+
+container.appendChild(content);
+
+const pEle = document.createElement("p");
+pEle.textContent="Hey I'm red!";
+container.appendChild(pEle);
+
+const btn = document.querySelector("#btn");
+btn.onclick = () => alert("Hello, World!");
+
+
+function alertFunction(){
+    alert("Function made!");
 }
+const btn2 = document.querySelector("#btn2");
+btn2.addEventListener("click", alertFunction);
