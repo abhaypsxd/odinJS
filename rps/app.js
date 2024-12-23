@@ -39,15 +39,50 @@ const rock = document.querySelector("#rock");
 const paper = document.querySelector("#paper");
 const scissor = document.querySelector("#scissor");
 
+const result = document.querySelector("#result");
+const winner = document.querySelector("#winner");
 
 rock.addEventListener("click",function (){
-    playRound("rock");
+    let res = playRound("rock");
+    if(res=="computer")computer_score++;
+    else if(res=="human")human_score++;
+    result.textContent="Running Score: "+computer_score+" - "+human_score;
+    if(computer_score==5||human_score==5){
+        if(computer_score==5){
+            winner.textContent=="Game ended! Bot wins!";
+        }
+        else{
+            winner.textContent=="Game ended! You win!";
+        }
+    }
 });
 paper.addEventListener("click",function (){
-    playRound("paper");
+    let res = playRound("paper");
+    if(res=="computer")computer_score++;
+    else if(res=="human")human_score++;
+    result.textContent="Running Score: "+computer_score+" - "+human_score;
+    if(computer_score==5||human_score==5){
+        if(computer_score==5){
+            winner.textContent=="Game ended! Bot wins!";
+        }
+        else{
+            winner.textContent=="Game ended! You win!";
+        }
+    }
 });
 scissor.addEventListener("click",function (){
-    playRound("scissor");
+    let res = playRound("scissor");
+    if(res=="computer")computer_score++;
+    else if(res=="human")human_score++;
+    result.textContent="Running Score: "+computer_score+" - "+human_score;
+    if(computer_score==5||human_score==5){
+        if(computer_score==5){
+            winner.textContent=="Game ended! Bot wins!";
+        }
+        else{
+            winner.textContent=="Game ended! You win!";
+        }
+    }
 });
 
 if(human_score>computer_score);
