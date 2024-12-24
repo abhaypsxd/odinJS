@@ -1,0 +1,95 @@
+*{
+    background-color: black;
+}
+body{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 80px;
+    /* background-color: gray; */
+
+}
+#display{
+    background-color: azure;
+    width: 460px;
+    height: 100px;
+    padding: 0;
+    margin: 0;
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: center;
+    align-items: last baseline;
+}
+#data{
+    background-color: azure;
+    padding: 5px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 40px;
+}
+.ui{
+    display: flex;
+    
+}
+.numpad{
+    width: 360px;
+    height: 360px;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-evenly;
+    padding: 0;
+}
+
+.numpad button{
+    background-color: aliceblue;
+    margin: 0;
+    width: 120px;
+    height: 120px;
+    border: 1px solid;
+}
+.numpad #three #six #nine{
+    border-right: 0;
+}
+
+.numpad #one #four #seven{
+    border-left: 0;
+}
+.operators{
+    /* margin-top: 20px; */
+    margin-left: 10px;
+    width: 90px;
+    height: 360px;
+    display: flex;
+    flex-wrap: wrap;
+    background-color: blueviolet;
+    /* justify-content: space-evenly; */
+}
+
+.operators button{
+    background-color: aliceblue;
+    margin: 0;
+    width: 90px;
+    height: 90px;
+    border: 1px solid;
+}
+button{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+}
+.func{
+    margin-top: 10px;
+    width: 460px;
+    display: flex;
+    justify-content: space-evenly;
+}
+.func button{
+    background-color: orange;
+    margin: 0;
+    width: 230px;
+    height: 90px;
+    border: 1px solid;
+}
+#zero{
+    background-color: aliceblue;
+}
